@@ -62,6 +62,12 @@ app.get('/', function (req, res) {
     });
 });
 
+app.get('/preview/', function (req, res) {
+    res.render('empty', {
+        title: 'Preview'
+    });
+});
+
 app.get('/yell', function (req, res) {
     res.render('yell', {
         title: 'Yell',
